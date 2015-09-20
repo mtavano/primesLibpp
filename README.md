@@ -11,3 +11,5 @@ For complie this librarie on linux(ubuntu based distributions):
 then you've installed Clang compiler, you only need to execute the make file on your shell
 
 ``make``
+
+on OSX you don't need to do anithing, Clang is the standars C/C++ compiler for this O.S
