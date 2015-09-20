@@ -13,10 +13,10 @@
 #define PRIMES_HPP
 
 // =============================================================================
-// =============================Monkey Mode checker=============================
+// =============================Linear Mode checker=============================
 // =============================================================================
 
-bool monkeyModeChecker(const std::uint32_t tol) {
+bool linearModeChecker(const std::uint32_t tol) {
   if (tol == 2 || tol == 3) return true;
   for (std::uint32_t i = 2; i <= std::sqrt(tol); ++i) {
     if (tol % i == 0) return false;
