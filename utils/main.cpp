@@ -41,7 +41,7 @@ int main(int argc, const char** argv) {
   for (size_t hi = range; hi < limit; hi += step) {
     size_t lo = hi - range;
     test_algorithm("Test numbers: ", hi, lo,
-                   [&](const uint32_t n) { return monkeyModeChecker(n); });
+                   [&](const uint32_t n) { return linearModeChecker(n); });
     test_algorithm("Test primes: ", hi, lo,
                    [&](const uint32_t n) { return linearChecker(n); });
     test_algorithm("Using sieve: ", hi, lo,
